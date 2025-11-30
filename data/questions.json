@@ -1,0 +1,491 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "category": "technical",
+      "difficulty": "easy",
+      "type": "frontend",
+      "text": "What is the difference between let, const, and var in JavaScript?",
+      "sample_answer": "let and const are block-scoped, while var is function-scoped. const cannot be reassigned, let can be reassigned, and var can be redeclared.",
+      "tags": ["javascript", "fundamentals"],
+      "expected_time": 120
+    },
+    {
+      "id": 2,
+      "category": "technical",
+      "difficulty": "easy",
+      "type": "frontend",
+      "text": "Explain the concept of closures in JavaScript.",
+      "sample_answer": "A closure is a function that has access to variables in its outer scope, even after the outer function has returned.",
+      "tags": ["javascript", "fundamentals"],
+      "expected_time": 120
+    },
+    {
+      "id": 3,
+      "category": "technical",
+      "difficulty": "medium",
+      "type": "frontend",
+      "text": "What are React hooks and why were they introduced?",
+      "sample_answer": "Hooks are functions that let you use state and lifecycle features in functional components. They were introduced to simplify component logic and enable code reuse.",
+      "tags": ["react", "hooks"],
+      "expected_time": 180
+    },
+    {
+      "id": 4,
+      "category": "technical",
+      "difficulty": "medium",
+      "type": "frontend",
+      "text": "Explain the difference between useEffect and useLayoutEffect.",
+      "sample_answer": "useEffect runs after paint, useLayoutEffect runs synchronously after DOM mutations but before paint. Use useLayoutEffect when you need to measure DOM or prevent visual flicker.",
+      "tags": ["react", "hooks"],
+      "expected_time": 180
+    },
+    {
+      "id": 5,
+      "category": "technical",
+      "difficulty": "hard",
+      "type": "frontend",
+      "text": "How would you optimize the performance of a React application?",
+      "sample_answer": "Use React.memo, useMemo, useCallback, code splitting, lazy loading, virtualization for long lists, and avoid unnecessary re-renders.",
+      "tags": ["react", "performance"],
+      "expected_time": 240
+    },
+    {
+      "id": 6,
+      "category": "technical",
+      "difficulty": "easy",
+      "type": "frontend",
+      "text": "What is the Virtual DOM and how does it work?",
+      "sample_answer": "Virtual DOM is a lightweight copy of the actual DOM. React compares it with the real DOM and only updates what changed, making updates efficient.",
+      "tags": ["react", "fundamentals"],
+      "expected_time": 120
+    },
+    {
+      "id": 7,
+      "category": "technical",
+      "difficulty": "medium",
+      "type": "frontend",
+      "text": "Explain the CSS Box Model.",
+      "sample_answer": "The box model consists of content, padding, border, and margin. It defines how elements are sized and spaced on a page.",
+      "tags": ["css", "fundamentals"],
+      "expected_time": 120
+    },
+    {
+      "id": 8,
+      "category": "technical",
+      "difficulty": "medium",
+      "type": "frontend",
+      "text": "What is the difference between Flexbox and CSS Grid?",
+      "sample_answer": "Flexbox is one-dimensional (row or column), Grid is two-dimensional (rows and columns). Use Flexbox for components, Grid for layouts.",
+      "tags": ["css", "layout"],
+      "expected_time": 180
+    },
+    {
+      "id": 9,
+      "category": "technical",
+      "difficulty": "easy",
+      "type": "frontend",
+      "text": "What are semantic HTML tags and why are they important?",
+      "sample_answer": "Semantic tags like header, nav, article give meaning to content. They improve accessibility, SEO, and code readability.",
+      "tags": ["html", "accessibility"],
+      "expected_time": 120
+    },
+    {
+      "id": 10,
+      "category": "technical",
+      "difficulty": "hard",
+      "type": "frontend",
+      "text": "Explain how you would implement server-side rendering in a React application.",
+      "sample_answer": "Use Next.js or implement custom SSR with Node.js. Render React components on the server, send HTML to client, then hydrate for interactivity.",
+      "tags": ["react", "ssr", "nextjs"],
+      "expected_time": 240
+    },
+    {
+      "id": 11,
+      "category": "technical",
+      "difficulty": "easy",
+      "type": "backend",
+      "text": "What is REST API and what are its principles?",
+      "sample_answer": "REST is an architectural style using HTTP methods. Principles include stateless communication, client-server separation, cacheability, and uniform interface.",
+      "tags": ["api", "fundamentals"],
+      "expected_time": 120
+    },
+    {
+      "id": 12,
+      "category": "technical",
+      "difficulty": "medium",
+      "type": "backend",
+      "text": "Explain the difference between SQL and NoSQL databases.",
+      "sample_answer": "SQL databases are relational with fixed schemas (MySQL, PostgreSQL). NoSQL are non-relational with flexible schemas (MongoDB, Redis). Choose based on data structure needs.",
+      "tags": ["database", "fundamentals"],
+      "expected_time": 180
+    },
+    {
+      "id": 13,
+      "category": "technical",
+      "difficulty": "medium",
+      "type": "backend",
+      "text": "What is middleware in Express.js or FastAPI?",
+      "sample_answer": "Middleware are functions that execute during request-response cycle. They can modify requests, responses, end cycles, or call next middleware.",
+      "tags": ["backend", "api"],
+      "expected_time": 180
+    },
+    {
+      "id": 14,
+      "category": "technical",
+      "difficulty": "hard",
+      "type": "backend",
+      "text": "How would you design a scalable microservices architecture?",
+      "sample_answer": "Use API gateway, service discovery, load balancing, message queues, containerization (Docker), orchestration (Kubernetes), and implement circuit breakers.",
+      "tags": ["architecture", "microservices"],
+      "expected_time": 300
+    },
+    {
+      "id": 15,
+      "category": "technical",
+      "difficulty": "easy",
+      "type": "backend",
+      "text": "What is the purpose of environment variables?",
+      "sample_answer": "Environment variables store configuration separately from code. They manage secrets, API keys, and environment-specific settings securely.",
+      "tags": ["backend", "security"],
+      "expected_time": 120
+    },
+    {
+      "id": 16,
+      "category": "technical",
+      "difficulty": "medium",
+      "type": "backend",
+      "text": "Explain JWT authentication and how it works.",
+      "sample_answer": "JWT (JSON Web Token) is a stateless authentication method. Server creates signed token with user data, client sends it with requests, server verifies signature.",
+      "tags": ["authentication", "security"],
+      "expected_time": 180
+    },
+    {
+      "id": 17,
+      "category": "technical",
+      "difficulty": "hard",
+      "type": "backend",
+      "text": "How would you handle database transactions and ensure ACID properties?",
+      "sample_answer": "Use database transactions with BEGIN, COMMIT, ROLLBACK. Ensure Atomicity (all or nothing), Consistency (valid state), Isolation (concurrent safety), Durability (permanent changes).",
+      "tags": ["database", "transactions"],
+      "expected_time": 240
+    },
+    {
+      "id": 18,
+      "category": "technical",
+      "difficulty": "medium",
+      "type": "backend",
+      "text": "What is caching and when would you use it?",
+      "sample_answer": "Caching stores frequently accessed data in fast storage (Redis, Memcached). Use for expensive queries, API responses, session data to improve performance.",
+      "tags": ["performance", "caching"],
+      "expected_time": 180
+    },
+    {
+      "id": 19,
+      "category": "technical",
+      "difficulty": "easy",
+      "type": "dsa",
+      "text": "Explain the difference between an array and a linked list.",
+      "sample_answer": "Arrays have contiguous memory with O(1) access, fixed size. Linked lists have non-contiguous memory with O(n) access, dynamic size, efficient insertion/deletion.",
+      "tags": ["data-structures", "fundamentals"],
+      "expected_time": 120
+    },
+    {
+      "id": 20,
+      "category": "technical",
+      "difficulty": "medium",
+      "type": "dsa",
+      "text": "What is Big O notation and why is it important?",
+      "sample_answer": "Big O describes algorithm time/space complexity in worst case. It helps compare efficiency and scalability of different solutions.",
+      "tags": ["algorithms", "complexity"],
+      "expected_time": 180
+    },
+    {
+      "id": 21,
+      "category": "technical",
+      "difficulty": "medium",
+      "type": "dsa",
+      "text": "Explain how a hash table works and its time complexity.",
+      "sample_answer": "Hash table uses hash function to map keys to array indices. Average O(1) for insert/search/delete. Handles collisions with chaining or open addressing.",
+      "tags": ["data-structures", "hashing"],
+      "expected_time": 180
+    },
+    {
+      "id": 22,
+      "category": "technical",
+      "difficulty": "hard",
+      "type": "dsa",
+      "text": "Describe different tree traversal methods and their use cases.",
+      "sample_answer": "Inorder (left-root-right) for BST sorting, Preorder (root-left-right) for copying trees, Postorder (left-right-root) for deletion, Level-order for BFS.",
+      "tags": ["data-structures", "trees"],
+      "expected_time": 240
+    },
+    {
+      "id": 23,
+      "category": "technical",
+      "difficulty": "hard",
+      "type": "dsa",
+      "text": "Explain dynamic programming and give an example.",
+      "sample_answer": "DP solves problems by breaking into subproblems and storing results. Example: Fibonacci with memoization reduces O(2^n) to O(n).",
+      "tags": ["algorithms", "dynamic-programming"],
+      "expected_time": 240
+    },
+    {
+      "id": 24,
+      "category": "technical",
+      "difficulty": "medium",
+      "type": "dsa",
+      "text": "What is the difference between BFS and DFS?",
+      "sample_answer": "BFS explores level by level using queue, finds shortest path. DFS explores depth-first using stack/recursion, uses less memory for deep graphs.",
+      "tags": ["algorithms", "graph"],
+      "expected_time": 180
+    },
+    {
+      "id": 25,
+      "category": "behavioral",
+      "difficulty": "medium",
+      "text": "Tell me about a time you faced a difficult challenge at work.",
+      "sample_answer": "Use STAR method: Situation (context), Task (responsibility), Action (steps taken), Result (outcome and learning).",
+      "tags": ["communication", "problem-solving"],
+      "expected_time": 180
+    },
+    {
+      "id": 26,
+      "category": "behavioral",
+      "difficulty": "medium",
+      "text": "Describe a situation where you had to work with a difficult team member.",
+      "sample_answer": "Focus on communication, empathy, finding common ground, and achieving positive outcome despite challenges.",
+      "tags": ["teamwork", "conflict-resolution"],
+      "expected_time": 180
+    },
+    {
+      "id": 27,
+      "category": "behavioral",
+      "difficulty": "easy",
+      "text": "Why do you want to work for our company?",
+      "sample_answer": "Research company values, products, culture. Connect your skills and goals with company mission. Show genuine interest.",
+      "tags": ["motivation", "company-fit"],
+      "expected_time": 120
+    },
+    {
+      "id": 28,
+      "category": "behavioral",
+      "difficulty": "medium",
+      "text": "Tell me about a time you failed and what you learned from it.",
+      "sample_answer": "Be honest, show accountability, focus on lessons learned and how you improved. Demonstrate growth mindset.",
+      "tags": ["self-awareness", "growth"],
+      "expected_time": 180
+    },
+    {
+      "id": 29,
+      "category": "behavioral",
+      "difficulty": "medium",
+      "text": "How do you handle tight deadlines and pressure?",
+      "sample_answer": "Discuss prioritization, time management, communication with stakeholders, staying calm, and delivering quality work under pressure.",
+      "tags": ["time-management", "stress-management"],
+      "expected_time": 180
+    },
+    {
+      "id": 30,
+      "category": "behavioral",
+      "difficulty": "easy",
+      "text": "What are your greatest strengths?",
+      "sample_answer": "Choose 2-3 relevant strengths with specific examples. Connect to job requirements. Be authentic and confident.",
+      "tags": ["self-awareness", "strengths"],
+      "expected_time": 120
+    },
+    {
+      "id": 31,
+      "category": "behavioral",
+      "difficulty": "medium",
+      "text": "Describe a time when you had to learn a new technology quickly.",
+      "sample_answer": "Explain learning approach, resources used, challenges faced, and successful application. Show adaptability and learning agility.",
+      "tags": ["learning", "adaptability"],
+      "expected_time": 180
+    },
+    {
+      "id": 32,
+      "category": "behavioral",
+      "difficulty": "hard",
+      "text": "Tell me about a time you disagreed with your manager's decision.",
+      "sample_answer": "Show respect, explain how you presented alternative viewpoint professionally, outcome, and what you learned about communication.",
+      "tags": ["communication", "leadership"],
+      "expected_time": 240
+    },
+    {
+      "id": 33,
+      "category": "technical",
+      "difficulty": "medium",
+      "type": "frontend",
+      "text": "What is prop drilling and how can you avoid it?",
+      "sample_answer": "Prop drilling passes props through multiple levels. Avoid with Context API, Redux, or component composition patterns.",
+      "tags": ["react", "state-management"],
+      "expected_time": 180
+    },
+    {
+      "id": 34,
+      "category": "technical",
+      "difficulty": "hard",
+      "type": "frontend",
+      "text": "Explain how you would implement code splitting in a React application.",
+      "sample_answer": "Use React.lazy() and Suspense for component-level splitting, dynamic imports for route-based splitting, and webpack for bundle optimization.",
+      "tags": ["react", "performance", "optimization"],
+      "expected_time": 240
+    },
+    {
+      "id": 35,
+      "category": "technical",
+      "difficulty": "medium",
+      "type": "frontend",
+      "text": "What is the difference between controlled and uncontrolled components?",
+      "sample_answer": "Controlled components have form data handled by React state. Uncontrolled use refs and DOM handles data. Controlled gives more control.",
+      "tags": ["react", "forms"],
+      "expected_time": 180
+    },
+    {
+      "id": 36,
+      "category": "technical",
+      "difficulty": "easy",
+      "type": "frontend",
+      "text": "Explain event bubbling and event capturing in JavaScript.",
+      "sample_answer": "Bubbling: event propagates from target to root. Capturing: root to target. Use stopPropagation() to prevent bubbling.",
+      "tags": ["javascript", "events"],
+      "expected_time": 120
+    },
+    {
+      "id": 37,
+      "category": "technical",
+      "difficulty": "medium",
+      "type": "frontend",
+      "text": "What are Web Workers and when would you use them?",
+      "sample_answer": "Web Workers run JavaScript in background threads. Use for heavy computations, data processing, or tasks that would block UI.",
+      "tags": ["javascript", "performance"],
+      "expected_time": 180
+    },
+    {
+      "id": 38,
+      "category": "technical",
+      "difficulty": "hard",
+      "type": "backend",
+      "text": "How would you implement rate limiting in an API?",
+      "sample_answer": "Use token bucket or sliding window algorithm. Store counters in Redis. Return 429 status when limit exceeded. Consider per-user and global limits.",
+      "tags": ["api", "security", "performance"],
+      "expected_time": 240
+    },
+    {
+      "id": 39,
+      "category": "technical",
+      "difficulty": "medium",
+      "type": "backend",
+      "text": "Explain the difference between authentication and authorization.",
+      "sample_answer": "Authentication verifies identity (who you are). Authorization determines permissions (what you can do). Both are essential for security.",
+      "tags": ["security", "fundamentals"],
+      "expected_time": 120
+    },
+    {
+      "id": 40,
+      "category": "technical",
+      "difficulty": "hard",
+      "type": "backend",
+      "text": "How would you design a URL shortener service?",
+      "sample_answer": "Use base62 encoding for short URLs, hash table for mapping, database for persistence, caching for performance, and handle collisions.",
+      "tags": ["system-design", "architecture"],
+      "expected_time": 300
+    },
+    {
+      "id": 41,
+      "category": "technical",
+      "difficulty": "medium",
+      "type": "backend",
+      "text": "What is CORS and how do you handle it?",
+      "sample_answer": "CORS (Cross-Origin Resource Sharing) allows controlled access to resources from different origins. Configure server headers or use proxy.",
+      "tags": ["api", "security"],
+      "expected_time": 180
+    },
+    {
+      "id": 42,
+      "category": "technical",
+      "difficulty": "easy",
+      "type": "backend",
+      "text": "Explain the difference between GET and POST requests.",
+      "sample_answer": "GET retrieves data, idempotent, cacheable, parameters in URL. POST sends data, not idempotent, not cached, data in body.",
+      "tags": ["api", "http"],
+      "expected_time": 120
+    },
+    {
+      "id": 43,
+      "category": "technical",
+      "difficulty": "hard",
+      "type": "dsa",
+      "text": "Explain how to detect a cycle in a linked list.",
+      "sample_answer": "Use Floyd's cycle detection (tortoise and hare). Two pointers at different speeds. If they meet, cycle exists. Time O(n), Space O(1).",
+      "tags": ["data-structures", "linked-list", "algorithms"],
+      "expected_time": 240
+    },
+    {
+      "id": 44,
+      "category": "technical",
+      "difficulty": "medium",
+      "type": "dsa",
+      "text": "What is a binary search tree and what are its properties?",
+      "sample_answer": "BST is a tree where left subtree < node < right subtree. Enables O(log n) search, insert, delete in balanced tree.",
+      "tags": ["data-structures", "trees"],
+      "expected_time": 180
+    },
+    {
+      "id": 45,
+      "category": "technical",
+      "difficulty": "hard",
+      "type": "dsa",
+      "text": "Explain the difference between merge sort and quick sort.",
+      "sample_answer": "Merge sort: stable, O(n log n) always, O(n) space. Quick sort: unstable, O(n log n) average, O(n²) worst, O(log n) space.",
+      "tags": ["algorithms", "sorting"],
+      "expected_time": 240
+    },
+    {
+      "id": 46,
+      "category": "behavioral",
+      "difficulty": "medium",
+      "text": "How do you prioritize tasks when everything seems urgent?",
+      "sample_answer": "Use Eisenhower matrix (urgent/important), communicate with stakeholders, break down tasks, focus on impact, delegate when possible.",
+      "tags": ["time-management", "prioritization"],
+      "expected_time": 180
+    },
+    {
+      "id": 47,
+      "category": "behavioral",
+      "difficulty": "medium",
+      "text": "Describe a time when you had to give constructive feedback to a colleague.",
+      "sample_answer": "Use specific examples, focus on behavior not person, be timely, offer solutions, follow up. Show empathy and professionalism.",
+      "tags": ["communication", "leadership"],
+      "expected_time": 180
+    },
+    {
+      "id": 48,
+      "category": "behavioral",
+      "difficulty": "easy",
+      "text": "What motivates you in your work?",
+      "sample_answer": "Be authentic. Mention learning, impact, teamwork, challenges, or growth. Connect to role and company.",
+      "tags": ["motivation", "self-awareness"],
+      "expected_time": 120
+    },
+    {
+      "id": 49,
+      "category": "behavioral",
+      "difficulty": "hard",
+      "text": "Tell me about a time you had to make a decision without complete information.",
+      "sample_answer": "Explain situation, how you gathered available data, consulted others, made informed decision, and adapted as new information emerged.",
+      "tags": ["decision-making", "problem-solving"],
+      "expected_time": 240
+    },
+    {
+      "id": 50,
+      "category": "behavioral",
+      "difficulty": "medium",
+      "text": "How do you stay updated with new technologies and industry trends?",
+      "sample_answer": "Mention blogs, podcasts, courses, conferences, side projects, open source contributions, and professional networks.",
+      "tags": ["learning", "growth"],
+      "expected_time": 180
+    }
+  ]
+}
