@@ -1,3 +1,96 @@
-// guy143.html
-// Created with Axion Studio
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe Game</title>
+    <style>
+        .game-board {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            width: 300px;
+            height: 300px;
+            border: 1px solid #ccc;
+        }
+        .cell {
+            background-color: #f0f0f0;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .cell:hover {
+            background-color: #ccc;
+        }
+        .winner {
+            background-color: #00ff00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tic Tac Toe Game</h1>
+    <div class="game-board">
+        <div class="cell" id="cell-1" onclick="playGame(1)"></div>
+        <div class="cell" id="cell-2" onclick="playGame(2)"></div>
+        <div class="cell" id="cell-3" onclick="playGame(3)"></div>
+        <div class="cell" id="cell-4" onclick="playGame(4)"></div>
+        <div class="cell" id="cell-5" onclick="playGame(5)"></div>
+        <div class="cell" id="cell-6" onclick="playGame(6)"></div>
+        <div class="cell" id="cell-7" onclick="playGame(7)"></div>
+        <div class="cell" id="cell-8" onclick="playGame(8)"></div>
+        <div class="cell" id="cell-9" onclick="playGame(9)"></div>
+    </div>
+    <script>
+        let currentPlayer = "X";
+        let gameBoard = Array(9).fill(null);
+        let winner = null;
 
+        function playGame(cellNumber) {
+            if (winner !== null) {
+                alert("Game is already over!");
+                return;
+            }
+            if (gameBoard[cellNumber - 1] !== null) {
+                alert("Cell is already occupied!");
+                return;
+            }
+            gameBoard[cellNumber - 1] = currentPlayer;
+            document.getElementById(`cell-${cellNumber}`).innerHTML = currentPlayer;
+            checkForWinner();
+            currentPlayer = (currentPlayer === "X") ? "O" : "X";
+        }
+
+        function checkForWinner() {
+            const winningCombinations = [
+                [0, 1, 2],
+                [3, 4, 5],
+                [6, 7, 8],
+                [0, 3, 6],
+                [1, 4, 7],
+                [2, 5, 8],
+                [0, 4, 8],
+                [2, 4, 6]
+            ];
+            for (let i = 0; i < winningCombinations.length; i++) {
+                const combination = winningCombinations[i];
+                if (gameBoard[combination[0]] !== null &&
+                    gameBoard[combination[0]] === gameBoard[combination[1]] &&
+                    gameBoard[combination[0]] === gameBoard[combination[2]]) {
+                    winner = gameBoard[combination[0]];
+                    highlightWinner(combination);
+                    alert(`Player ${winner} wins!`);
+                    return;
+                }
+            }
+            if (gameBoard.every(cell => cell !== null)) {
+                alert("It's a draw!");
+            }
+        }
+
+        function highlightWinner(combination) {
+            for (let i = 0; i < combination.length; i++) {
+                document.getElementById(`cell-${combination[i] + 1}`).classList.add("winner");
+            }
+        }
+    </script>
+</body>
+</html>
